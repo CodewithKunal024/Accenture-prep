@@ -13,7 +13,12 @@ class LargestNumber{
         
     }
     public int Largest( int ar[],int size ){
-        Arrays.sort(ar);
-        return ar[size-1];
+        int max=ar[0];
+        for(int i=0;i<size;i++){
+            if(ar[i]>max){
+                max=ar[i];
+            }
+        }
+        return max;
     }
 }
